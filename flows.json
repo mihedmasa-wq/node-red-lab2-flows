@@ -96,6 +96,14 @@
         "env": []
     },
     {
+        "id": "9989818da16b9180",
+        "type": "tab",
+        "label": "Поток 13",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "550cbfc8b25e7aef",
         "type": "mqtt-broker",
         "name": "HiveMQ",
@@ -1427,6 +1435,51 @@
         "statusType": "auto",
         "x": 630,
         "y": 220,
+        "wires": []
+    },
+    {
+        "id": "955560bc705c8037",
+        "type": "inject",
+        "z": "9989818da16b9180",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "09bc2a931fe668de"
+            ]
+        ]
+    },
+    {
+        "id": "09bc2a931fe668de",
+        "type": "debug",
+        "z": "9989818da16b9180",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 200,
         "wires": []
     }
 ]
