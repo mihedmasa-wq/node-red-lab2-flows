@@ -372,7 +372,7 @@
         "type": "function",
         "z": "59cdbec4a587888b",
         "name": "lab2/Михед/function",
-        "func": "// Массив с числами\nconst numbers = [10, 25, 3, 47, 8];\nlet sum = 0;\n\n// Цикл for для подсчёта суммы\nfor (let i = 0; i < numbers.length; i++) {\n    sum += numbers[i];\n}\n\n// Условие if/else\nlet message;\nif (sum > 50) {\n    message = \"Сумма большая\";\n} else {\n    message = \"Сумма небольшая\";\n}\n\n// Формируем объект с результатом\nmsg.payload = {\n    originalArray: numbers,\n    sum: sum,\n    message: message,\n    timestamp: new Date().toISOString()\n};\n\nreturn msg;\nreturn msg;",
+        "func": "// Массив с числами\nconst numbers = [10, 25, 3, 47, 8];\nlet sum = 0;\n\n// Цикл for для подсчёта суммы\nfor (let i = 0; i < numbers.length; i++) {\n    sum += numbers[i];\n}\n\n// Условие if/else\nlet message;\nif (sum > 50) {\n    message = \"Сумма большая\";\n} else {\n    message = \"Сумма небольшая\";\n}\n\n// Формируем объект с результатом\nmsg.payload = {\n    originalArray: numbers,\n    sum: sum,\n    message: message,\n    timestamp: new Date().toISOString()\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -479,10 +479,11 @@
         "y": 180,
         "wires": [
             [
-                "4dad294ab5f19dca",
-                "f175b953966d5ec5"
+                "4dad294ab5f19dca"
             ],
-            []
+            [
+                "f175b953966d5ec5"
+            ]
         ]
     },
     {
@@ -581,7 +582,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
+        "x": 430,
         "y": 160,
         "wires": [
             [
